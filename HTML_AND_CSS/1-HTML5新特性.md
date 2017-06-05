@@ -58,7 +58,20 @@
 
 ##### 9. 下载download属性
     //HTML5的下载属性可以允许开发者强制下载一个页面，而非加载那个页面。
-    <a href="download_pdf.php" download="somefile.pdf">下载PDF文件</a> 
+    <a href="download_pdf.php" download="somefile.pdf">下载PDF文件</a>
+
+##### 10. DNS的预先加载处理
+要知道DNS的的解析成本很高滴，往往导致了网站加载速度慢。现在浏览器针对这个问题开发了更智能的处理方式，它将域名缓存后，当用户点击其它页面地址后自动的获取。
+如果你希望预先获取NDS，你可以控制你的浏览器来解析域名，例如：
+
+    <link rel="dns-prefetch" href="//www.owulia.com">
+
+##### 11. 链接网页的预先加载处理
+要知道链接能够在也页面中帮助用户导航，但是页面加载的速度快慢决定了用户体验的好与坏，使用如下HTML5的prefetch属性可以帮助你针对指定的地址预加载页面或者页面中的特定资源，这样用户点击的时候，会发现页面加载速度提高了。
+
+    <link rel="prefetch" href="http://www.owulia.com/users.html" />
+    <link rel="prefetch" href="http://www.owulia.com/images/logo_small.jpg" />
+
 
 ### 最后：
 如果有什么疑问，请联系邮箱：zhigang.chen@owulia.com<br>
