@@ -8,13 +8,31 @@
 
 ### 新特性
 
-#### 1. 新的文档声明
+##### 1. 新的文档声明
     <!DOCTYPE html>
 
-#### 2. 脚本和链接无需type
+##### 2. 脚本和链接无需type
     <link rel="stylesheet" href="path/to/stylesheet.css"/>  //引入样式
     <script src="path/to/script.js"></script>               //引入js
 
+##### 3. 语义化标签
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+            <header>
+                <h1></h1>
+            </header>
+            <nav></nav>
+            <article>
+                <section></section>
+            </article>
+            <aside></aside>
+            <footer></footer>
+        </body>
+    </html>
 
 ### 最后：
 如果有什么疑问，请联系邮箱：zhigang.chen@owulia.com<br>
