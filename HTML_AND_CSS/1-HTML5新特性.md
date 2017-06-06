@@ -65,9 +65,23 @@
     search              //定义用于搜索的文本字段。
     tel                 //定义用于电话号码的文本字段。
     url                 //定义用于 URL 的文本字段。
+
+### 8. 新增表单属性
+Input标签新增加的特有属性
+
+    1）autofocus属性：<input type="text" autofocus="autofocus"/>  此属性可以设置当前页面中input标签加载完毕后获得焦点。
+    2）max,min,step：都是跟数字相关
+    3）placeholder：提示信息属性
+    4）multiple：用于文件上传控件，设置此属性后，允许上传多个文件。demo：<input type="file" multiple="multiple" name="fileDemo" id="fileDemo" />
+    5）校验属性：设置了required 属性后预示着当前文本框在提交前必须有数据输入，而这一切都是由浏览器自动完成。
+    6）pattern正则表达式的校验。demo：<input type="email" pattern="[^ @]*@[^ @]*" value="">
+    7）另外一个比较大的改进就是增加了form属性，也就是说，任何一个标签都可以指定它所属于一个表单，而不是必须在<form></form>进行包裹了。
     
-### 8. 表单正则表达式pattern属性
-    <input type="email" pattern="[^ @]*@[^ @]*" value="">
+Form表单标签新增加属性
+
+    1）novalidate 属性规定在提交表单时不应该验证 form 或 input 域。
+    demo：<form action="" method="POST" novalidate="true"></form>
+    2)autocomplete 属性规定 form 或 input 域应该拥有自动完成功能。
 
 ### 9. 下载download属性
 HTML5的下载属性可以允许开发者强制下载一个页面，而非加载那个页面。
