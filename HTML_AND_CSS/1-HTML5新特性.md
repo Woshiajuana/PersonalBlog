@@ -46,12 +46,26 @@
     window.localStorage     //长期存储数据，浏览器关闭后数据不丢失
     window.sessionStorage   //数据在浏览器关闭后自动删除
 
-### 7. 新增表单控件date、time、email、url、search等
+### 7. 新增表单控件
     <input type="date">
     <input type="time">
     <input type="email">
     <input type="url">
     <input type="search">
+    //完整控件
+    color               //定义拾色器
+    date                //定义日期字段(带有calendar控件)
+    datetime            //定义日期字段（带有 calendar 和 time 控件）
+    datetime-local      //定义日期字段（带有 calendar 和 time 控件）
+    month               //定义日期字段的月（带有 calendar 控件）
+    week                //定义日期字段的周（带有 calendar 控件）
+    time                //定义日期字段的时、分、秒（带有 time 控件）
+    email               //定义用于 e-mail 地址的文本字段
+    number              //定义带有 spinner 控件的数字字段
+    range               //定义带有 slider 控件的数字字段。
+    search              //定义用于搜索的文本字段。
+    tel                 //定义用于电话号码的文本字段。
+    url                 //定义用于 URL 的文本字段。
     
 ### 8. 表单正则表达式pattern属性
     <input type="email" pattern="[^ @]*@[^ @]*" value="">
