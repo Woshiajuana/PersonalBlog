@@ -35,77 +35,57 @@
 ### 3. nav标签
 nav标签代表页面的一个部分，是一个可以作为页面导航的链接组，其中的导航元素链接到其它页面或者当前页面的其它部分，使html代码在语义化方面更加精确，同时对于屏幕阅读器等设备的支持也更好。
 
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title></title>
-        </head>
-        <body>
-            <header>
-                <h1></h1>
-            </header>
-            <nav></nav>
-            <article>
-                <section></section>
-            </article>
-            <aside></aside>
-            <footer></footer>
-        </body>
-    </html>
+    <nav>
+        <a href='#'>导航1</a>
+        <a href='#'>导航2</a>
+        <a href='#'>导航3</a>
+    </nav>
 
-### 4. 绘画canvas
-    <canvas></canvas>
+### 4. aside标签
+aside标签用来装载非正文的内容，被视为页面里面一个单独的部分。它包含的内容与页面的主要内容是分开的，可以被删除，而不会影响到网页的内容、章节或是页面所要传达的信息。例如广告，成组的链接，侧边栏等等。
+
+    <aside>
+        <h2>广告</h2>
+        <p>广告内容</p>
+    </aside>
    
-### 5. 媒介回放的 video 和 audio 元素
-    <video></video>
-    <audio></audio>
+### 5. header标签
+<header>标签定义文档的页眉，通常是一些引导和导航信息。它不局限于写在网页头部，也可以写在网页内容里面。<br>
+通常<header>标签至少包含（但不局限于）一个标题标记（h1-h6），还可以包括<hgroup>标签，还可以包括表格内容、标识、搜索表单、<nav>导航等。
+
+    <header>
+        <hgroup>
+            <h1>网站标题</h1>
+            <h2>网站副标题</h2>
+        </hgroup>
+    </header>
     
-### 6. 数据存储localStorage和sessionStorage
-    window.localStorage     //长期存储数据，浏览器关闭后数据不丢失
-    window.sessionStorage   //数据在浏览器关闭后自动删除
+### 6. footer标签
+footer标签定义section或document的页脚，包含了与页面、文章或是部分内容有关的信息，比如说文章的作者或者日期。作为页面的页脚时，一般包含了版权、相关文件和链接。它和<header>标签使用基本一样，可以在一个页面中多次使用，如果在一个区段的后面加入footer，那么它就相当于该区段的页脚了。
 
-### 7. 新增表单控件
-    <input type="date">
-    <input type="time">
-    <input type="email">
-    <input type="url">
-    <input type="search">
-    //完整控件
-    color               //定义拾色器
-    date                //定义日期字段(带有calendar控件)
-    datetime            //定义日期字段（带有 calendar 和 time 控件）
-    datetime-local      //定义日期字段（带有 calendar 和 time 控件）
-    month               //定义日期字段的月（带有 calendar 控件）
-    week                //定义日期字段的周（带有 calendar 控件）
-    time                //定义日期字段的时、分、秒（带有 time 控件）
-    email               //定义用于 e-mail 地址的文本字段
-    number              //定义带有 spinner 控件的数字字段
-    range               //定义带有 slider 控件的数字字段。
-    search              //定义用于搜索的文本字段。
-    tel                 //定义用于电话号码的文本字段。
-    url                 //定义用于 URL 的文本字段。
+    <footer>
+        COPYRIGHT@Ajuan
+    </footer>
+
+### 7. hgroup标签
+hgroup标签是对网页或区段section的标题元素（h1-h6）进行组合。例如，在一区段中你有连续的h系列的标签元素，则可以用hgroup将他们括起来
+
+    <hgroup>
+        <h1>这是一篇介绍HTML 5结构标签的文章</h1>
+        <h2>HTML 5的革新</h2>
+    </hgroup>
     
-### 8. 表单正则表达式pattern属性
-    <input type="email" pattern="[^ @]*@[^ @]*" value="">
+### 8. figure标签
+用于对元素进行组合。多用于图片与图片描述组合。
 
-### 9. 下载download属性
-HTML5的下载属性可以允许开发者强制下载一个页面，而非加载那个页面。
+    <figure>
+        <img src="img.gif" alt="figure标签"  title="figure标签" />
+        <figcaption>这儿是图片的描述信息</figcaption>
+    </figure>
 
-    <a href="download_pdf.php" download="somefile.pdf">下载PDF文件</a>
-
-### 10. DNS的预先加载处理
-要知道DNS的的解析成本很高滴，往往导致了网站加载速度慢。现在浏览器针对这个问题开发了更智能的处理方式，它将域名缓存后，当用户点击其它页面地址后自动的获取。
-如果你希望预先获取NDS，你可以控制你的浏览器来解析域名，例如：
-
-    <link rel="dns-prefetch" href="//www.owulia.com">
-
-### 11. 链接网页的预先加载处理
-要知道链接能够在也页面中帮助用户导航，但是页面加载的速度快慢决定了用户体验的好与坏，使用如下HTML5的prefetch属性可以帮助你针对指定的地址预加载页面或者页面中的特定资源，这样用户点击的时候，会发现页面加载速度提高了。
-
-    <link rel="prefetch" href="http://www.owulia.com/users.html" />
-    <link rel="prefetch" href="http://www.owulia.com/images/logo_small.jpg" />
-
+## 总结：
+有了新的结构性的标签的标准，让HTML文档更加清晰，可阅读性更强，更利于SEO，也更利于视障人士阅读。
+参考博文：http://www.cnblogs.com/fly_dragon/archive/2012/05/25/2516142.html
 
 ## 最后：
 如果有什么疑问，请联系邮箱：zhigang.chen@owulia.com<br>
