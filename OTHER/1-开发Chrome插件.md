@@ -54,6 +54,19 @@ manifest文件内容格式的版本，目前版本为2，本次介绍的格式�
 ### 8.content_scripts
 页面注入配置。例如：向域名为xx的注入一串输出hello world的脚本，就需要该配置，同时也需要配置拥有该域名xx的权限。
 
+    "content_scripts":[
+    　　{
+    　　　　"matches":["https://login.taobao.com/*"],
+    　　　　"js":["taobao_login.js"],
+    　　　　"run_at":"document_end",
+    　　　　"all_frames":true
+    　　}
+    ]
+    //matches: 需要注入的脚本页面的URL，支持正则表达式。
+    //js: 注入的脚本文件，相对路径。
+    //run_at: 注入的位置，document_start文档的开始，document_idel文档的中间 , document_end文档的末尾。
+    //all_frames: 是否全frame注入，比如页面使用了iframe或者frame。
+    
 ## 使用谷歌浏览器打包：
 ``` 
 
