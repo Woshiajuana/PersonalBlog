@@ -28,7 +28,7 @@
 ```
 
 ## 总结：
-参考博文：https://github.com/mqyqingfeng/Blog/issues/11
+参考：http://open.chrome.360.cn/extension_dev/overview.html
 
 ## 最后：
 如果有什么疑问，请联系邮箱：zhigang.chen@owulia.com<br>
