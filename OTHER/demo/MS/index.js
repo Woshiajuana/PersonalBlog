@@ -9,6 +9,8 @@
         ssEle = getEle('ss'),
         lsEle = getEle('ls'),
         dataEle = getEle('data');
+    document.body.style.backgroundColor = 'red';
+    if(!getEle('container-wrap')) return;
     getEle('container-wrap').addEventListener('click',function (event){
         if (event.target == ssEle) {
             ssEle.classList.add('active');

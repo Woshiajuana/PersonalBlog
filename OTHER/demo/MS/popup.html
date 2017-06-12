@@ -1,12 +1,75 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <title>mailto</title>
-</head>
-<body>
-<p>1922年的春天，一个想要成名名叫卡拉威（马奎尔Tobey Maguire 饰）的作家，离开了美国中西部，来到了纽约。那是一个道德感渐失，爵士乐流行，走私为王，股票飞涨的时代。为了追寻他的美国梦，他搬入纽约附近一海湾居住。</p>
-<p>菲茨杰拉德，二十世纪美国文学巨擘之一，兼具作家和编剧双重身份。他以诗人的敏感和戏剧家的想象为"爵士乐时代"吟唱华丽挽歌，其诗人和梦想家的气质亦为那个奢靡年代的不二注解。</p>
-<a href="mailto:yy@imooc.com?subject=观了不起的盖茨比有感。&body=你好，对此评论有些想法。">对此影评有何感想，发送邮件给我</a>
-</body>
-</html>
+<meta charset="UTF-8">
+<style type="text/css">
+    *{margin:0;padding:0;}
+    ul,ol{list-style:none}
+    body{ color:#333;overflow: hidden;margin: 0px;font-size:12px;}
+    .container-wrap{
+        background-color: #f5f5f5;
+        width: 400px;
+        zoom:1;
+    }
+    .container-wrap:after{
+        content:'\20';
+        display:block;
+        height:0;
+        clear:both;
+    }
+    .menu-wrap{
+        float: left;
+        width: 99px;
+        padding: 20px 0;
+        border-right: 1px solid #ddd;
+    }
+    .menu-item{
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+    .menu-item.active{
+        background-color: #ffd000;
+    }
+    .data-wrap{
+        font-size: 12px;
+        float: right;
+        width: 280px;
+        padding: 10px;
+    }
+    .data-item{
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #ddd;
+    }
+    .data-key{
+        text-align: right;
+        float: left;
+        width: 40px;
+        padding-right: 10px;
+    }
+    .data-value{
+        text-align: left;
+        float: left;
+        width: 150px;
+        margin-top: 5px;
+        padding: 0 8px;
+        margin-right: 5px;
+    }
+    .data-operate span{
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .operate-delete{
+        color: red;
+    }
+</style>
+<div class="container-wrap" id="container-wrap">
+    <div class="menu-wrap">
+        <span id="ss" class="menu-item active">SS</span>
+        <span id="ls" class="menu-item">LS</span>
+    </div>
+    <ul class="data-wrap" id="data"></ul>
+</div>
+<script src="index.js"></script>
