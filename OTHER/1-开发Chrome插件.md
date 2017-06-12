@@ -3,60 +3,28 @@
 ## 简介：
 > 开发Chrome插件的基本步骤
 
-## 模拟实现call
-``` js
-Function.prototype.call2 = function (context) {
-    var context = context || window;
-    context.fn = this;
-    var args = [];
-    for(var i = 1, len = arguments.length; i < len; i++) {
-        args.push('arguments[' + i + ']');
-    }
-    var result = eval('context.fn(' + args +')');
-    delete context.fn
-    return result;
-}
-// 测试一下
-var value = 2;
-var obj = {
-    value: 1
-}
-function bar(name, age) {
-    console.log(this.value);
-    return {
-        value: this.value,
-        name: name,
-        age: age
-    }
-}
-bar.call(null); // 2
-console.log(bar.call2(obj, 'kevin', 18));
-// 1
-// Object {
-//    value: 1,
-//    name: 'kevin',
-//    age: 18
-// }
+## manifest.json
 ```
-## 模拟实现apply
-``` js
-Function.prototype.apply2 = function (context, arr) {
-    var context = Object(context) || window;
-    context.fn = this;
-    var result;
-    if (!arr) {
-        result = context.fn();
-    }
-    else {
-        var args = [];
-        for (var i = 0, len = arr.length; i < len; i++) {
-            args.push('arr[' + i + ']');
-        }
-        result = eval('context.fn(' + args + ')')
-    }
-    delete context.fn
-    return result;
+{
+  "name": "MS",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "description": "Manage Storage",
+  "browser_action": {
+    "default_icon": "icon.png" ,
+    "default_title": "MS",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[{
+    "js": [ "index.js" ],
+    "matches": [ "<all_urls>" ]
+  }]
 }
+```
+
+## 使用谷歌浏览器打包
+``` 
+
 ```
 
 ## 总结：
