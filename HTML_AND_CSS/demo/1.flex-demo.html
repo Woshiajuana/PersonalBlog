@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-demo</title>
+    <style>
+        * {margin: 0;padding: 0;}
+        ul{display: flex;height: 50px;width: 400px;background-color: #000000}
+        li{float: left;width: 200px;height: 50px;}
+        li:nth-child(1){background-color: #00B75A;flex-shrink: 0}
+        li:nth-child(2){background-color: #007aff;flex-shrink: 2}
+        li:nth-child(3){background-color: #712EEC;flex-shrink: 3}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
