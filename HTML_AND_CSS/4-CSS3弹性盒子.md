@@ -3,6 +3,72 @@
 ## 简介：
 > flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
 
+## flex-direction (适用于父类容器的元素上)：
+> 设置或检索伸缩盒对象的子元素在父容器中的位置。
+```html css
+<!DOCTYPE html">
+<html>
+<head>
+    <title></title>
+    <style>
+    .box{
+    	display:-webkit-flex;
+    	display:flex;
+    	margin:0;padding:10px;list-style:none;background-color:#eee;}
+    .box li{width:100px;height:100px;border:1px solid #aaa;text-align:center;}
+    #box{
+    	-webkit-flex-direction:row;
+    	flex-direction:row;
+    }
+    #box2{
+    	-webkit-flex-direction:row-reverse;
+    	flex-direction:row-reverse;
+    }
+    #box3{
+    	height:500px;
+    	-webkit-flex-direction:column;
+    	flex-direction:column;
+    }
+    #box4{
+    	height:500px;
+    	-webkit-flex-direction:column-reverse;
+    	flex-direction:column-reverse;
+    }
+    </style>
+</head>
+<body>
+    <h2>flex-direction:row</h2>
+    <ul id="box" class="box">
+    	<li>a</li>
+    	<li>b</li>
+    	<li>c</li>
+    </ul>
+    <h2>flex-direction:row-reverse</h2>
+    <ul id="box2" class="box">
+    	<li>a</li>
+    	<li>b</li>
+    	<li>c</li>
+    </ul>
+    <h2>flex-direction:column</h2>
+    <ul id="box3" class="box">
+    	<li>a</li>
+    	<li>b</li>
+    	<li>c</li>
+    </ul>
+    <h2>flex-direction:column-reverse</h2>
+    <ul id="box4" class="box">
+    	<li>a</li>
+    	<li>b</li>
+    	<li>c</li>
+    </ul>
+</body>
+</html>
+```
+row：横向从左到右排列（左对齐），默认的排列方式。
+row-reverse：反转横向排列（右对齐，从后往前排，最后一项排在最前面。
+column：纵向排列。
+row-reverse：反转纵向排列，从后往前排，最后一项排在最上面。
+
 ## flex-grow (适用于弹性盒模型容器子元素)：
 > 设置或检索弹性盒的扩展比率。根据弹性盒子元素所设置的扩展因子作为比率来分配剩余空间。 
 ```html css
