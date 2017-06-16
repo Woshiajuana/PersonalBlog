@@ -12,7 +12,7 @@ flex-grow 属性用于设置或检索弹性盒的扩展比率。
 ```
 ## flex-shrink属性(适用于弹性盒模型容器子元素)：
 
-``` html css
+```html css
 <!DOCTYPE html">
 <html>
 <head>
