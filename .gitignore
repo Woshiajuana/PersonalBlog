@@ -1,8 +1,8 @@
 .DS_Store
 node_modules/
 dist/
-.idea/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-PersonalBlog.iml
+.idea/
+app/mocks
