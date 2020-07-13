@@ -8,3 +8,4 @@ yarn-error.log*
 app/mocks
 
 cmd/config.js
+cmd/md5.json

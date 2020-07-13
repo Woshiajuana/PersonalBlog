@@ -8,8 +8,6 @@
         "mock": "node cmd -m cmd/config.js -f cmd/config.js"
     },
     "devDependencies": {
-        "marked": "^1.1.0",
-        "wow-cmd": "0.0.17",
         "babel-core": "^6.22.1",
         "babel-loader": "^6.2.10",
         "babel-plugin-component": "^1.1.1",
@@ -21,7 +19,10 @@
         "cheerio": "^1.0.0-rc.3",
         "co": "^4.6.0",
         "co-prompt": "^1.0.0",
-        "ftp": "^0.3.10"
+        "crypto": "^1.0.1",
+        "ftp": "^0.3.10",
+        "marked": "^1.1.0",
+        "wow-cmd": "0.0.17"
     },
     "engines": {
         "node": ">= 4.0.0",
