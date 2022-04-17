@@ -66,8 +66,8 @@
     // "emitDecoratorMetadata": true,               /* 用于指定是否为装饰器提供元数据支持. */
 
     /* Advanced Options */
-    "skipLibCheck": true,                           /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
+    "skipLibCheck": true,                           /* 跳过声明文件的类型检查. */
+    "forceConsistentCasingInFileNames": true        /* 不允许对同一文件进行大小写不一致的引用. */
   },
 //  "files": [] // 可以配置一个数组列表，里面包含指定文件的相对或绝对路径，编译器在编译的时候只会编译包含在files中列出的文件。如果不指定，则取决于有没有设置 include 选项，如果没有 include 选项，则默认编译根目录以及所有子目录中的文件。这里列出的路径必须是指定文件，而不是文件夹且不支持通配符。
 //    "include": [] // 可以指定要编译的路径列表，但是和files的区别在于，这里的路径可以是文件夹，也可以是文件，可以使用相对和绝对路径，而且可以使用通配符
